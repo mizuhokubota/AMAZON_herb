@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*----------------------*/
+/*   mainはココから   */
+/*----------------------*/
+p {
+  background-color: greenyellow;
+}
+
+.leaf {
+  color: pink;
+}
+
+/*----------------------*/
+/* mainはココで終わり */
+/*----------------------*/
+/*# sourceMappingURL=style.css.map */

@@ -1,13 +1,16 @@
+@charset "UTF-8";
 /*----------------------*/
-/*   mainはココから   */
+/*   cartはココから   */
 /*----------------------*/
 p {
   background-color: greenyellow;
 }
+
 .leaf {
   color: pink;
 }
 
 /*----------------------*/
-/* mainはココで終わり */
+/* cartはココで終わり */
 /*----------------------*/
+/*# sourceMappingURL=cart.css.map */

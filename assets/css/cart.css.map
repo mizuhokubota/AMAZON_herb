@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": ";AAAA,0BAA0B;AAC1B,wBAAwB;AACxB,0BAA0B;AAC1B,AAAA,CAAC,CAAC;EACA,gBAAgB,EAAE,WAAW;CAC9B;;AACD,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;CACZ;;AAED,0BAA0B;AAC1B,wBAAwB;AACxB,0BAA0B",
     "sources": [
-        "../scss/style.scss"
+        "../scss/cart.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "cart.css"
 }
