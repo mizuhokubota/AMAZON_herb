@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* -----------------------全ページに必要⇑⇑------------------*/
+
+$familiy: 'Odibee Sans', cursive;
+$familiy2: 'Sigmar One', cursive;
+
+$fontColor: #206a5d;
+$backColor: #f7ea00;
+$mainColor: #e48900;
+$button: #be0000;
+$color: black;
+$white: white;
+$pink: pink;
+
+$slide2: slide2 5s linear 2s infinite forwards;
+
+
+$fontSize: 2em;
+
+$shadow: 0 5px 5px white;
+$width: 50%;
+
+@mixin flex($justify:center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin favorite {
+  font-size: $font;
+  font-weight: bold;
+  color: $button;
+  border-radius: 5px/5px;
+  cursor: pointer;
+  box-shadow: $shadow;
+
+  &:active {
+    box-shadow: none;
+    color: $mainColor;
+    background-color: $button;
+  }
+}
+
+// かわいく花火のボタン
+$button-width:150px;
+$button-height:65px;
+$button-color:lighten(crimson,5%);
+$button-font-size: 1.9em;
+
+$frill-vert-space:45px; //vertical spacing between frills
+$frill-horizontal-offset:14px; //initial offset
+$frill-distance:80px; //distance moved by frills
+$frill-stagger: 15px; //distance between center and edge frills
+
+$frill-rotation:34deg;
+$frill-height:8px;
+$frill-width: 38px;
+
+$speed:0.38s;
+$timing-function:ease-out;

@@ -6,30 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- FontAwesomeだよ⇑⇑ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <!-- $familiyのgooglefontだよ⇑⇑ -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <!-- $familiy2のgooglefontだよ⇑⇑ -->
 
-    <link rel="stylesheet" href="./assets/scss/header.scss">
-    <link rel="stylesheet" href="./assets/scss/footer.scss">
-    <link rel="stylesheet" href="./assets/scss/style.scss">
-    <!-- sassだよ⇑⇑ -->
     <!-- cssだよ⇩⇩ -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Amazonherb.lab</title>
 </head>
 <body>
-    <!-- ------------------------------------headerはここから---------------------------------- -->
+   
+<!-- ------------------------------------headerはここから---------------------------------- -->
+        <header class="header">
+            <h1>
+                AmazonHerb lab&middot;
+            </h1>
+            <div class="header-right">
+                <a href="tel:0312345678">
+                    <i class="fas fa-skull-crossbones skelet fa-spin"></i> 050&minus;4182&minus;4182 <span class="tel-rogo">ヨイハーブ</span></a>
+            </div>
+        </header>
+<!-- ------------------------------------headerはここで終わり -------------------------------->
+<!-- ------------------------------------mainはここから------------------------------------ -->
+    <main class="main">       
+        <div class="top-img">
+            <div class="top-main">
+                <h2 class="top-h2"><button type="button" class="top-btn-h2">クスリの世界はコチラ</button></h2>
+                <!-- <h3><button type="button" class="top-btn2 btn-color1"><i class="fas fa-skull-crossbones skelet1 fa-spin"></button></i></h3>
+                <h3><button type="button" class="top-btn2 btn-color2"><i class="fas fa-skull-crossbones skelet2 fa-2x"></button></i></h3> -->
+                <h3><button type="button" class="top-btn2 btn-color3"><i class="fas fa-skull-crossbones skelet3 fa-3x fa-spin"></button></i></h3>
+                <p class="top-p">スーパーボタニカル&lceil;アマゾンの秘薬&rfloor;</p>
+                <h2 class="top-h2 top-amazon"><button type="button" class="top-btn-h2">アマゾン秘薬の世界が <br> 気になる方はコチラ</button></h2>
+            </div>
+        </div>
+            <section class="section1">
+                <div class="flex">
+                        <div class="flex-p">
+                            <h2 class="section1-h2">お試しで購入したい方へ</h2>
+                                <p class="section1-p">自立コース</p>
+                                <p class="section1-p2">S/349</p>
+                            <p><img src="./assets/img/herb.png" alt="" width="200px" height="200px" class="herb-img"></p>
+                            <p><button class="favorite-button" type="button">申込</button></p>
+                        </div>
+                        <div class="flex-p">
+                            <h2 class="section1-h2">長期的に購入したい方へ</h2>
+                                <p class="section1-p">依存コース</p>
+                                <p class="section1-p2">S/250</p>
+                            <p><img src="./assets/img/herb.png" alt="" width="200px" height="200px" class="herb-img"></p>
+                            <p><button class="favorite-button" type="button">申込</button></p>
+                        </div>
+                </div>
+            </section>
+            <div class="icon">
+                <i class="far fa-grin-squint-tears fa-2x"></i><span>用法容量をお確かめください</span>
+                <i class="far fa-grin-squint-tears fa-2x"></i>
+            </div>
 
-    <!-- ------------------------------------headerはここで終わり -------------------------------->
-
-    <!-- ------------------------------------mainはここから------------------------------------ -->
-    <p>test
-    <i class="fab fa-envira leaf"></i>
-    </p>
-
+        <section class="section2 section2-color">
+                <h2 class="section1-h2">未知なる世界へ羽ばたきたい方へ</h2>
+                    <p class="section1-p">Dreamコース</p>
+                    <p class="section1-p2">S/130</p>
+                <p><img src="./assets/img/dream.png" alt="" class="herb-img"></p>
+                <div class="fancy-button">
+                    <div class="left-frills frills"></div>
+                    <div class="button">Free！</div>
+                    <div class="right-frills frills"></div>
+                  </div>
+        </section>
+        <section class="section3">
+            <div class="youtube">
+                <iframe width="100" height="100" src="https://www.youtube.com/embed/pFaj7gOx3V8?start=839" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+            </div>
+        </section>
+    </main>
     <!-- ------------------------------------mainはここで終わり-------------------------------- -->
  
     <!-- ------------------------------------footerはここから---------------------------------- -->
+    <footer class="footer">
+        <h1 class="section1-h1">
+            &copy; 2021 AmazonHerb lab&middot; 
+        </h1>
+        <a href="tel:0312345678">
+            <i class="fas fa-skull-crossbones skelet-footer"></i> 050&minus;4182&minus;4182 <span class="tel-rogo">ヨイハーブ</span></a>
 
+    </footer>
     <!-- ------------------------------------footerはここで終わり------------------------------ -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/app.js"></script>

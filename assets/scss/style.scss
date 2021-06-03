@@ -1,12 +1,409 @@
+
+@import "_function.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
 /*----------------------*/
 /*   mainはココから   */
 /*----------------------*/
-p {
-  background-color: greenyellow;
+
+.top-img {
+  background-image: url("../img/leafmain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-.leaf {
-  color: pink;
+/*バックグラウンド画像⇑⇑*/
+/*クスリの世界はこちら⇩⇩*/
+.top-h2 {
+  @include flex();
+  padding-top: 4rem;
+  .top-btn-h2 {
+    cursor: pointer;
+    background-color: $mainColor;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px $fontColor;
+    font-family: $familiy2;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px $button;
+    width: 700px;
+    height: 100px;
+    font-size: 4rem;
+    animation: $slide2;
+    &:active {
+      box-shadow: none;
+      background-color: $button;
+      text-shadow: none;
+      color: $fontColor;
+    }
+  }
 }
+/*クスリの世界はこちら終わり⇑⇑*/
+/*がいこつのボタンシリーズは⇩⇩*/
+.top-btn2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px $white;
+  &:active {
+    background-color: $pink;
+    box-shadow: none;
+  }
+}
+/*がいこつボタン全体のcss⇑⇑*/
+/*ボタン個別のcssは⇩⇩*/
+.btn-color1 {
+  margin: 3rem;
+  background-color: $mainColor;
+  cursor: move;
+  animation: btn-color1 10s linear 1s 1 forwards;
+  .skelet1 {
+    color: $button;
+  }
+}
+/*btn-color1のアニメーション⇩*/
+@keyframes btn-color1 {
+  0% {
+    // background-color: $fontColor;
+    transform: translateX(1000px);
+  }
+  20% {
+    background-color: $button;
+  }
+  40% {
+    background-color: $color;
+  }
+  60% {
+    background-color: $button;
+  }
+  80% {
+    background-color: $fontColor;
+  }
+  100% {
+    // opacity: 1;
+    transform: translateX(600px);
+  }
+}
+
+.btn-color2 {
+  background-color: $color;
+  margin: 1.5rem;
+  cursor: help;
+   /*ボタンをスライドするアニメーション⇩⇩*/
+  animation: btn-color2 5s linear 2s 1 forwards;
+  .skelet2 {
+    color: $button;
+       /*がいこつをゆらゆらするアニメーション⇩⇩*/
+    animation: fuwafuwa 1s infinite ease-in-out .8s alternate;
+  }
+}
+@keyframes fuwafuwa {
+  0%{
+    transform: translate(0, 0) rotate(15deg);
+  }
+  50%{
+    transform: translate(0, -15) rotate(0deg);
+  }
+  100%{
+    transform: translate(0, 0) rotate(-15deg);
+  }
+}
+/*btn-color2のアニメーション⇩*/
+@keyframes btn-color2 {
+  0% {
+    // background-color: $fontColor;
+    transform: translateX(1000px);
+  }
+  20% {
+    background-color: $button;
+  }
+  40% {
+    background-color: $color;
+  }
+  60% {
+    background-color: $button;
+  }
+  80% {
+    background-color: $fontColor;
+  }
+  100% {
+    // opacity: 1;
+    transform: translateX(600px);
+  }
+}
+
+.btn-color3 {
+  background-color: $button;
+  margin: 2.5rem;
+  cursor: progress;
+  animation: btn-color3 10s linear 1s 1 forwards;
+  .skelet3 {
+    color: $color;
+  }
+}
+@keyframes btn-color3 {
+  0% {
+    // background-color: $fontColor;
+    transform: translateX(10) scale(0);
+  }
+  20% {
+    background-color: $button;
+  }
+  40% {
+    background-color: $color;
+  }
+  60% {
+    background-color: $button;
+  }
+  80% {
+    background-color: $fontColor;
+  }
+  100% {
+    // opacity: 1;
+    transform: translateX(600px) scale(1.5);
+  }
+}
+/*ボタン個別のcss終わり⇑⇑*/
+// ⇩⇩スーパーボタニカル&lceil;アマゾンの秘薬
+.top-p {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: $button;
+  text-shadow: 5px 5px 20px $color, 0 0 5em $fontColor, 0 0 0.2em $white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+// ⇑⇑スーパーボタニカル&lceil;アマゾンの秘薬終わり
+/*-----------------------section1はココから⇩⇩--------------------------*/
+// .section-back {
+//   background-image: url("../img/flowerback.png");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   height: 100vh;
+// }
+.section1 {
+  width: 1200px;
+  background-color: #688d86;
+  margin: 150px auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .flex {
+    @include flex(space-around);
+  }
+  .flex-p {
+    // border-right: 3px double $fontColor;
+    @include flex();
+    flex-direction: column;
+  }   
+}
+      .section1-h2 {
+        font-size: $fontSize;
+        color: $white;
+        border-bottom: 3px double $color;
+      }
+      .section1-p {
+
+        font-size: 2rem;
+        font-weight: bolder;
+        color: $white;
+        padding-top: 2rem;
+      }
+      .section1-width {
+        width: 50%;
+      }
+      .section1-p2 {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $button;
+        text-shadow: 2px 2px 2px $color;
+      }
+      .herb-img:active {
+        cursor:  not-allowed;
+        box-shadow: $shadow;
+      }
+      .favorite-button {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 4rem;
+        width: 200px;
+        height: 90px;
+        color: $color;
+        background-color: $button;
+      }
+ 
+// ------------------iconのローリングはここから     -------------------------------
+.icon {
+  font-weight: bold;
+  animation: slide 8s linear 1s infinite forwards;
+}
+// ------------------iconのローリングはここで終わり-------------------------------
+
+// -----------------------未知なる世界へ羽ばたきたい方はコチラ
+    .section2 {
+      width: 1200px;
+      background-color: $mainColor;
+      margin: 100px auto;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      @include flex();
+      flex-direction: column;
+    }
+
+    // かわいく花火のボタン
+    .button {
+      background:$button-color;
+      border-radius:5px;
+      color:white;
+      cursor:pointer; 
+      font-family:Roboto;
+      font-size:$button-font-size;
+      height:$button-height;
+      letter-spacing:.2px;
+      line-height:$button-height;
+      text-align:center;
+      text-transform:uppercase;
+      user-select:none;
+      width:$button-width;
+      &:hover {
+        background:lighten($button-color,4%);
+      }
+      &:active {
+        box-shadow:inset 0px 2px 8px -1px darken($button-color,6%);
+      }
+    }
+    
+    .fancy-button {
+      margin:auto;
+      position:relative;
+    }
+    .frills, .frills:after, .frills:before {
+      position:absolute;
+      background:$button-color;
+      border-radius:($frill-height/2);
+      height:$frill-height;
+    }
+    .frills:after, .frills:before {
+      content:"";
+      display:block;
+    }
+    .frills:before {
+      bottom:$frill-vert-space;
+    }
+    .frills:after {
+      top:$frill-vert-space;
+    }
+    .left-frills {
+      right:$button-width + $frill-horizontal-offset;
+      top:($button-height/2)-($frill-height/2);
+      .active & {
+         animation: move-left $speed $timing-function, width-to-zero $speed $timing-function;
+      }
+      
+      &:before, &:after {
+        left:$frill-stagger;
+          
+      }
+      &:before {
+        .active & {
+          animation: width-to-zero $speed $timing-function, move-up $speed $timing-function; 
+        }
+      }
+      &:after {
+       .active & {
+          animation: width-to-zero $speed $timing-function, move-down $speed $timing-function; 
+       }
+      }
+      
+    }
+    .right-frills {
+      left:$button-width + $frill-horizontal-offset;
+      top:($button-height/2)-($frill-height/2);
+      .active & {
+        animation: move-right $speed $timing-function, width-to-zero $speed $timing-function;
+      }
+      &:before, &:after {
+        right:$frill-stagger;
+      }
+      &:before {
+       .active & {
+          animation: width-to-zero $speed $timing-function, move-up $speed $timing-function; 
+       }
+      }
+      &:after {
+        .active & {
+          animation: width-to-zero $speed $timing-function, move-down $speed $timing-function; 
+        }
+      }
+    }
+    
+    .left-frills:before, .right-frills:after { 
+      transform:rotate($frill-rotation)
+        
+    }
+    
+    .left-frills:after, .right-frills:before {
+      transform:rotate(- $frill-rotation);
+    }
+    
+    @keyframes move-left {
+     0% {
+       transform:none;
+     }
+      65% {
+        transform: translateX(-1*$frill-distance);
+      }
+     100% {
+       transform: translateX(-1*$frill-distance);
+     }
+    }
+    @keyframes move-right {
+     0% {
+       transform:none;
+     }
+     65% {
+       transform: translateX($frill-distance);
+     }
+      100% {
+        transform: translateX($frill-distance);
+      }
+    }
+    @keyframes width-to-zero {
+     0% {
+       width:$frill-width;
+     }
+     100% {
+       width:$frill-height;
+     }
+    }
+    @keyframes move-up {
+      0% {
+        
+      }
+      100% {
+        bottom:$frill-vert-space*1.55;
+      }
+    }
+    @keyframes move-down {
+      0% {
+        
+      }
+      100% {
+        top:$frill-vert-space*1.55;
+      }
+    }
+
+    // かわいい花火のボタン　終わり
+
+    // ----------------------------------youtube
+    .youtube {
+      width: 560px;
+      margin: 0 auto;
+      .iframe {
+        width: 560px;
+        height: 315px;
+      }
+    }
 
 /*----------------------*/
 /* mainはココで終わり */
